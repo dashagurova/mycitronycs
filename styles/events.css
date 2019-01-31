@@ -1,0 +1,284 @@
+/*Mobile First*/
+
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu|VT323');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+
+html,body {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 100;
+    background-image: url("../images/back_dark.jpg");
+    position: fixed;
+    left: 0;
+    top:0;
+    min-width: 100%;
+    min-height: 100%;
+    background-size:cover;
+    margin:0;
+}
+
+.navigation{
+    display:none;
+}
+
+/* -----------------------
+	Navigation Overlay
+------------------------ */
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top:0;
+    background-color: rgb(0, 153, 153);
+    overflow-x:hidden;
+    background-image: linear-gradient(#003333, #004d4d, #006666, #008080, #009999, #00b3b3, #00cccc, #00e6e6);
+    transition: 0.5s; 
+    
+}
+#myNav{
+    height: 0;
+}
+.overlay-content {
+    position: relative;
+    top: 8%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay-content a {
+    margin-bottom: 50px;
+    text-shadow: 2px 2px black;
+}
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #003333;
+}
+
+.miniNav{
+    position:relative;
+    background-color: black;
+    height: 7%;
+    
+}
+.overlay .closebtn {
+    position: absolute;
+    right:8px;
+    font-size: 40px;
+}
+
+.bar{
+    position: absolute;
+    background-color: black;
+    height:50px;
+    width:100%;
+}
+.bar #logo{
+    width:60px;
+    height:50px;
+    left:3px;
+    top:1px;
+    position: absolute;
+    
+}
+.bar .fa {
+    position:absolute;
+    right:20px;
+    top:15px;
+    color:#ffffff;
+    font-size: 25px;
+    
+}
+
+/* -----------------------
+	Bigger Devices Nav
+------------------------ */
+
+
+@media only screen and (min-width: 768px){
+
+    .fa{
+        visibility: hidden;
+    }
+    .bar{
+        display: none;
+    }
+    
+    .navigation{
+        background-color: black;
+        width:100%;
+        height: 50px;
+        margin:auto;
+        display: flex;
+    }
+    
+    .navigation li a{
+        color:#ffffff;
+        text-decoration: none;
+    }
+    .navigation ul{
+        list-style: none;
+        align-items: center;
+        justify-content: space-around;
+        margin: auto;
+        
+    }
+    #list{
+        display: flex;
+        flex-grow: 1;
+        flex-direction: row;
+        margin:0;
+        
+    }
+    .navigation #logo{
+        width:60px;
+    }
+    .navigation #name{
+        text-decoration: none;
+        color:#ffffff;
+        padding-top: 20px
+    }
+    .navigation #list a:hover,
+    .navigation #list a:focus{
+        color:#4dffff;
+    }
+}
+
+/*-----------------------
+       Main MOBILE
+------------------------*/
+
+.wrap {
+    overflow-x:hidden;
+    position: fixed;
+    top:0;
+    left:0;
+    display:flex;
+    flex-direction: column;
+    margin-top:50px;
+    height: 100%;
+
+
+}
+.gallery {
+    
+    text-align: center;
+    margin:10px;
+/*    border: 2px solid #ffffff;*/
+    text-align: center;
+    background-color: rgba(163, 194, 194, .3);
+    
+}
+#school{
+    margin-bottom: 80px;
+}
+
+#maker,
+#school,
+#ais{
+    margin-top: 8px;
+}
+.gallery:hover{
+    border: 3px solid #009999;
+}
+
+.gallery a img{
+
+    width:100%;
+    max-height: 400px;
+    max-width:100%;
+    box-sizing: border-box;
+}
+
+.desc strong{
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: 100;
+    color: #00e6e6;
+    font-size: 1.4rem;
+    
+    
+}
+.desc {
+    
+    padding: 15px;
+    text-align: center;
+    color:#ffffff;
+}
+
+/*---------------
+    MEDIUM SCREEN
+-------------------*/
+
+@media only screen and (min-width: 450px) and (max-width:768px){
+    .gallery{
+        width:70%;
+        height: 100%;
+    }
+    #school{
+        margin-bottom: 170px;
+    
+    }
+    .wrap{
+        margin-top: 10%;
+        
+/*        justify-content: center;*/
+        align-items: center;
+    }
+}
+
+      
+/* -----------------------
+	Main Article Bigger
+------------------------ */
+@media only screen and (min-width: 768px){
+    
+    
+    .wrap{
+       
+        flex-direction: row;
+        flex-wrap:nowrap;
+        height:100%;
+        width:100%;
+        justify-content: space-around;
+        
+        
+    }
+    .gallery{
+        max-width:450px;
+        background-color: rgba(163, 194, 194, .3);
+        max-height: 600px;
+    }
+    #ais{
+        max-height: 700px;
+    }
+    
+    #school,
+    #ais,
+    #maker{
+        margin-top: 70px;
+    }
+    
+}
+
+
+
+        
+
+   
+
+
+
+
+
+

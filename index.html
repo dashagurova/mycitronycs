@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mycotronics</title>
+  <!--  Styles  -->
+  <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+<!-- THE BODY -->
+<body>
+    
+	<!-- OVERLAY CONTENT -->
+   <div id="myNav" class="overlay">
+       <div class="miniNav">
+            
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+       
+       </div>
+       <div class="overlay-content">
+           <a href='#'>Home</a>
+           <a href='#'>Product</a>
+           <a href='#'>About</a>
+           <a href='events.html'>Events</a>
+       </div>
+       
+    <div class="overlay" id="thankyou">
+        <div class="miniNav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeSubmit()">&times;</a>
+        </div>
+        <h2><strong>Thank You!</strong></h2>
+        <p>Your email address was successfully submitted.</p>
+       
+       </div>  
+    </div>
+    
+    
+<!--  OVERLAYED CONTENT  -->
+    <div class="wrap">
+        <div class="bar">
+            <a href="#">
+                <img src="images/logo.png" id="logo">
+            </a>
+
+            <a href="#" onclick="openNav()">
+               <i class="fa fa-bars"></i>
+            </a>
+        </div> 
+    <!--   full screen nav  -->
+        <nav class="navigation">
+            <a href="#">
+                <img src="images/logo.png" id="logo">
+                <a href="#"id="name">Mycotronics</a>
+            </a>
+            <ul id="list">
+                <li></li>
+                <li><a href='#'>Home</a></li>
+                <li><a href='#'>Product</a></li>
+                <li><a href='#'>About</a></li>
+                <li><a href='events.html'>Events</a></li>
+            </ul>
+        </nav>
+    <!--    main content  -->
+       <section>
+           <h1>Join the effort</h1>
+           <form >
+               <input type="text" name="email" value="you@domain.com" id="email">
+               <button type="button" id="button" onclick="openSubmit()">SUBMIT</button>
+           </form>
+           <p>We will send you a servey asking about what you care about in low-cost incubator</p>
+      </section>
+    </div>
+    
+<!--    JS    -->
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+        function openSubmit(){
+            document.getElementById("thankyou").style.height = "100%";
+        }
+        function closeSubmit(){
+            document.getElementById("thankyou").style.height = "0%";
+        }
+    </script>
+</body>

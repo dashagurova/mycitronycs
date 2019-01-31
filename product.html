@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mycotronics</title>
+  <!--  Styles  -->
+  <link rel="stylesheet" href="styles/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+<!-- THE BODY -->
+<body>
+    <div class="wrap">
+<!-- OVERLAY CONTENT -->
+   <div id="myNav" class="overlay">
+       <div class="miniNav">
+            
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+       
+       </div>
+       <div class="overlay-content">
+           <a href='#'>Home</a>
+           <a href='#'>Product</a>
+           <a href='#'>About</a>
+           <a href='#'>Press</a>
+       </div>
+       
+    </div>
+    
+    <!--   full screen nav  -->
+     <nav class="navigation">
+        <a href="#">
+            <img src="images/logo.png" id="logo">
+            <a href="#"id="name">Mycotronics</a>
+        </a>
+        <ul id="list">
+            <li></li>
+            <li><a href='#'>Home</a></li>
+            <li><a href='#'>Product</a></li>
+            <li><a href='#'>About</a></li>
+            <li><a href='#'>Press</a></li>
+        </ul>
+    </nav> 
+    
+<!--  OVERLAYED CONTENT  -->
+
+    <div class="bar">
+        <a href="#">
+            <img src="images/logo.png" id="logo">
+        </a>
+
+        <a href="#" onclick="openNav()">
+           <i class="fa fa-bars"></i>
+        </a>
+    </div> 
+
+
+<!--  Main content -->
+    <div>
+
+        <h2>The Incubator</h2>
+        <div class="box">
+            <img  class="incubator" src="images/incubator.png" alt="theincubator">
+            
+
+            <ul class="features">
+                <li>Feature1</li>
+                <li>Feature2</li>
+                <li>Feature3</li>
+                <li>Feature4</li>
+                <li>Feature5</li>
+            </ul>
+        </div>
+    </div>
+   </div> 
+    
+    <!--    JS    -->
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+    </script>
+</body>
+</html>
