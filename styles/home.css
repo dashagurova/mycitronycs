@@ -111,8 +111,9 @@ Mobile Thankyou overlay
 .overlay h2,
 .overlay p{
     color:white;
-    
+    font-weight: 100;
     text-align: center;
+    font-family: 'Fredericka the Great', sans-serif;
 }
 .overlay h2{
     margin-top:200px;
@@ -120,12 +121,11 @@ Mobile Thankyou overlay
     
 }
 .overlay p{
+    font-family: 'Ubuntu', sans-serif;
     margin-left:50px;
     margin-right:50px;
 }
-.overlay strong{
-    font-family: 'Fredericka the Great', sans-serif;
-}
+
 
 /* -----------------------
 	Main Content
