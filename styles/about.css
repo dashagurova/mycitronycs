@@ -7,7 +7,7 @@
 html,body {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 100;
-    background-image: url("../images/back_main.jpg");
+    background-image: url("../images/back_lab.jpg");
     position: fixed;
     left: 0;
     top:0;
@@ -29,7 +29,7 @@ html,body {
     height: 100%;
     width: 100%;
     position: fixed;
-    z-index: 3;
+    z-index: 5;
     left: 0;
     top:0;
     background-color: rgb(0, 153, 153);
@@ -83,6 +83,7 @@ html,body {
     background-color: black;
     height:50px;
     width:100%;
+    z-index: 2;
 }
 .bar #logo{
     width:60px;
@@ -121,6 +122,9 @@ html,body {
         height: 50px;
         margin:auto;
         display: flex;
+        z-index: 4;
+        position: sticky;
+
     }
     
     .navigation li a{
@@ -164,21 +168,19 @@ html,body {
     display: flex;
     flex-direction: column;
    
-    margin-top: 20px;
+    margin-top: 80px;
     position:fixed;
-    top:50px;
+    top:0;
     left:0;
     overflow-x: hidden;
     overflow-y: auto;
-    height: 100%;
-    max-width: 100%
+    max-height: 100%;
+    max-width: 100%;
 }
 #feedback{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    
-    
+    justify-content: space-between; 
 }
 h2{
     color:#00e6e6;
@@ -225,6 +227,7 @@ p{
 }
 #button{
     width:100px;
+    height:30px;
     margin: auto;
     background-color: #00b3b3;
     border-radius: 3px;
@@ -236,7 +239,12 @@ p{
 
 @media only screen and (min-width: 768px){
     
-    
+    .wrap{
+        flex-direction: row;
+    }
+    #form{
+        margin-bottom: 0;
+    }
     
     
     
