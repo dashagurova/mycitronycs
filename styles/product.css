@@ -186,6 +186,7 @@ p{
     margin-bottom: 100px;
     max-width: 100%;
     
+    
    
 }
 
@@ -234,9 +235,13 @@ button{
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
     text-align: center;
-    margin-left:42%;
     margin-bottom: 100px;
+   
+    margin-left:38%;
+    
+    
     margin-top:50px;
+
     
 }
 
@@ -273,6 +278,7 @@ button{
         margin-left:100px;
         margin-right:100px;
         line-height: 18px;
+        font-size: 17px;
     }
     button{
         
