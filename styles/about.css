@@ -102,6 +102,31 @@ html,body {
     
 }
 
+/*------------------
+Mobile Thankyou overlay
+-------------------*/
+
+#thankyou{
+    height:0;
+}
+
+#thankyou h2{
+    color:white;
+    font-weight: 100;
+    text-align: center;
+    margin: auto;
+    font-family: 'Fredericka the Great', sans-serif;
+    margin-top:200px;
+    text-shadow:2px 2px black;
+}
+
+#thankyou p{
+    font-family: 'Ubuntu', sans-serif;
+    margin-left:50px;
+    margin-right:50px;
+    text-align: center;
+}
+
 /* -----------------------
 	Bigger Devices Nav
 ------------------------ */

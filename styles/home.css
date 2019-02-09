@@ -188,10 +188,11 @@ Mobile Thankyou overlay
 .wrap{
     overflow-x: hidden;
     overflow-y: auto;
-    height:100%;
+    
     position:fixed;
     top:0;
     left:0;
+    height:100%;
 }
 section{
     margin-top:200px;
